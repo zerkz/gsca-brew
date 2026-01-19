@@ -5,21 +5,21 @@
 class Gsca < Formula
   desc "Global Steam Command Args - CLI tool to manage Steam game launch options"
   homepage "https://github.com/zerkz/gsca"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zerkz/gsca/releases/download/v1.0.0/gsca_1.0.0_darwin_amd64.tar.gz"
-      sha256 "efdf585d485a60385047c09d4d8f7ff2a3680211243fba1a5a62b0b9603efc55"
+      url "https://github.com/zerkz/gsca/releases/download/v1.0.1/gsca_1.0.1_darwin_amd64.tar.gz"
+      sha256 "5bd7db81444c97f32a9f1592f3a0519716eb3dc593ba52a3d92f5fc26d389af8"
 
       def install
         bin.install "gsca"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zerkz/gsca/releases/download/v1.0.0/gsca_1.0.0_darwin_arm64.tar.gz"
-      sha256 "945f14c65ace2d2b6a12b94a82a863f36fee13d0a3092652e8ca50b83b794edd"
+      url "https://github.com/zerkz/gsca/releases/download/v1.0.1/gsca_1.0.1_darwin_arm64.tar.gz"
+      sha256 "af671804ed0d30174f3ce1d12b0445e2df73cdaa1dc38b35d945ce5618345d6d"
 
       def install
         bin.install "gsca"
@@ -29,15 +29,15 @@ class Gsca < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zerkz/gsca/releases/download/v1.0.0/gsca_1.0.0_linux_amd64.tar.gz"
-      sha256 "f7b41bc6dfea8114146071eaf80fb394d7dbc568b626ed2a37948241a4b3ef66"
+      url "https://github.com/zerkz/gsca/releases/download/v1.0.1/gsca_1.0.1_linux_amd64.tar.gz"
+      sha256 "83e5afea1b4fae7b0ba06fa359ef369c0af6ec40ce519dea0891ebeda5216631"
       def install
         bin.install "gsca"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zerkz/gsca/releases/download/v1.0.0/gsca_1.0.0_linux_arm64.tar.gz"
-      sha256 "88ff44443d68583aa2a4410867cf865283d298e14ee8396e58f32e78dc04d2d0"
+      url "https://github.com/zerkz/gsca/releases/download/v1.0.1/gsca_1.0.1_linux_arm64.tar.gz"
+      sha256 "8fd99594d53f344ccfce3dbb0f31019bbbc9373769089e60e6b1aed90faf319b"
       def install
         bin.install "gsca"
       end
