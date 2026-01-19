@@ -11,7 +11,7 @@ class Gsca < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/zerkz/gsca/releases/download/v1.0.0/gsca_1.0.0_darwin_amd64.tar.gz"
-      sha256 "9497fb5b43f090368c9418f8cbb8e73472d26807989ef4d623000c04b1b5545c"
+      sha256 "57327ccb951f532840703f23e333fe1e9b3dc284e49fd681fdb9c4ec8e968563"
 
       def install
         bin.install "gsca"
@@ -19,7 +19,7 @@ class Gsca < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/zerkz/gsca/releases/download/v1.0.0/gsca_1.0.0_darwin_arm64.tar.gz"
-      sha256 "596cc1b4b879c9c441e303e43e472ce356ec17f7fb033e91b583da6aa6d2686e"
+      sha256 "785d9b3219badc78ed5c74aa4cd4d4a015c249caf4b3bf41949d1dec38cdc32c"
 
       def install
         bin.install "gsca"
@@ -30,14 +30,14 @@ class Gsca < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/zerkz/gsca/releases/download/v1.0.0/gsca_1.0.0_linux_amd64.tar.gz"
-      sha256 "e80258fca18294c70db365d1b168897d1d7df18f335e000931e0d65dac078788"
+      sha256 "00d354d902fe6fd9287916602295519a96e047b51ac020e6c749864e1ef8f565"
       def install
         bin.install "gsca"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/zerkz/gsca/releases/download/v1.0.0/gsca_1.0.0_linux_arm64.tar.gz"
-      sha256 "2bf9a9282bf59fefda9d10ae59e63839a8e1f2d79a5d9f00e7bdefe19093849a"
+      sha256 "9f2f543a73036cca3321d60373db6be39dfc8ccc252e647fec04da0b7bf6d3f1"
       def install
         bin.install "gsca"
       end
